@@ -1,0 +1,431 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: AoC
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/hugo/my_projects/AOC-CPP/build/
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_1
+
+
+#############################################
+# Order-only phony target for day_2022_1
+
+build cmake_object_order_depends_target_day_2022_1: phony || CMakeFiles/day_2022_1.dir
+
+build CMakeFiles/day_2022_1.dir/src/day_2022_1.cpp.o: CXX_COMPILER__day_2022_1_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_1.cpp || cmake_object_order_depends_target_day_2022_1
+  DEP_FILE = CMakeFiles/day_2022_1.dir/src/day_2022_1.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_1.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_1.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_1
+
+
+#############################################
+# Link the executable day_2022_1
+
+build day_2022_1: CXX_EXECUTABLE_LINKER__day_2022_1_Debug CMakeFiles/day_2022_1.dir/src/day_2022_1.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_1
+  TARGET_PDB = day_2022_1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_2
+
+
+#############################################
+# Order-only phony target for day_2022_2
+
+build cmake_object_order_depends_target_day_2022_2: phony || CMakeFiles/day_2022_2.dir
+
+build CMakeFiles/day_2022_2.dir/src/day_2022_2.cpp.o: CXX_COMPILER__day_2022_2_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_2.cpp || cmake_object_order_depends_target_day_2022_2
+  DEP_FILE = CMakeFiles/day_2022_2.dir/src/day_2022_2.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_2.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_2.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_2
+
+
+#############################################
+# Link the executable day_2022_2
+
+build day_2022_2: CXX_EXECUTABLE_LINKER__day_2022_2_Debug CMakeFiles/day_2022_2.dir/src/day_2022_2.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_2
+  TARGET_PDB = day_2022_2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_3
+
+
+#############################################
+# Order-only phony target for day_2022_3
+
+build cmake_object_order_depends_target_day_2022_3: phony || CMakeFiles/day_2022_3.dir
+
+build CMakeFiles/day_2022_3.dir/src/day_2022_3.cpp.o: CXX_COMPILER__day_2022_3_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_3.cpp || cmake_object_order_depends_target_day_2022_3
+  DEP_FILE = CMakeFiles/day_2022_3.dir/src/day_2022_3.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_3.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_3.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_3
+
+
+#############################################
+# Link the executable day_2022_3
+
+build day_2022_3: CXX_EXECUTABLE_LINKER__day_2022_3_Debug CMakeFiles/day_2022_3.dir/src/day_2022_3.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_3
+  TARGET_PDB = day_2022_3.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_4
+
+
+#############################################
+# Order-only phony target for day_2022_4
+
+build cmake_object_order_depends_target_day_2022_4: phony || CMakeFiles/day_2022_4.dir
+
+build CMakeFiles/day_2022_4.dir/src/day_2022_4.cpp.o: CXX_COMPILER__day_2022_4_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_4.cpp || cmake_object_order_depends_target_day_2022_4
+  DEP_FILE = CMakeFiles/day_2022_4.dir/src/day_2022_4.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_4.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_4.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_4
+
+
+#############################################
+# Link the executable day_2022_4
+
+build day_2022_4: CXX_EXECUTABLE_LINKER__day_2022_4_Debug CMakeFiles/day_2022_4.dir/src/day_2022_4.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_4.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_4
+  TARGET_PDB = day_2022_4.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_4_2
+
+
+#############################################
+# Order-only phony target for day_2022_4_2
+
+build cmake_object_order_depends_target_day_2022_4_2: phony || CMakeFiles/day_2022_4_2.dir
+
+build CMakeFiles/day_2022_4_2.dir/src/day_2022_4_2.cpp.o: CXX_COMPILER__day_2022_4_2_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_4_2.cpp || cmake_object_order_depends_target_day_2022_4_2
+  DEP_FILE = CMakeFiles/day_2022_4_2.dir/src/day_2022_4_2.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_4_2.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_4_2.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_4_2
+
+
+#############################################
+# Link the executable day_2022_4_2
+
+build day_2022_4_2: CXX_EXECUTABLE_LINKER__day_2022_4_2_Debug CMakeFiles/day_2022_4_2.dir/src/day_2022_4_2.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_4_2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_4_2
+  TARGET_PDB = day_2022_4_2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_5
+
+
+#############################################
+# Order-only phony target for day_2022_5
+
+build cmake_object_order_depends_target_day_2022_5: phony || CMakeFiles/day_2022_5.dir
+
+build CMakeFiles/day_2022_5.dir/src/day_2022_5.cpp.o: CXX_COMPILER__day_2022_5_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_5.cpp || cmake_object_order_depends_target_day_2022_5
+  DEP_FILE = CMakeFiles/day_2022_5.dir/src/day_2022_5.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_5.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_5.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_5
+
+
+#############################################
+# Link the executable day_2022_5
+
+build day_2022_5: CXX_EXECUTABLE_LINKER__day_2022_5_Debug CMakeFiles/day_2022_5.dir/src/day_2022_5.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_5.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_5
+  TARGET_PDB = day_2022_5.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_6
+
+
+#############################################
+# Order-only phony target for day_2022_6
+
+build cmake_object_order_depends_target_day_2022_6: phony || CMakeFiles/day_2022_6.dir
+
+build CMakeFiles/day_2022_6.dir/src/day_2022_6.cpp.o: CXX_COMPILER__day_2022_6_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_6.cpp || cmake_object_order_depends_target_day_2022_6
+  DEP_FILE = CMakeFiles/day_2022_6.dir/src/day_2022_6.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_6.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_6.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_6
+
+
+#############################################
+# Link the executable day_2022_6
+
+build day_2022_6: CXX_EXECUTABLE_LINKER__day_2022_6_Debug CMakeFiles/day_2022_6.dir/src/day_2022_6.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_6.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_6
+  TARGET_PDB = day_2022_6.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_7
+
+
+#############################################
+# Order-only phony target for day_2022_7
+
+build cmake_object_order_depends_target_day_2022_7: phony || CMakeFiles/day_2022_7.dir
+
+build CMakeFiles/day_2022_7.dir/src/day_2022_7.cpp.o: CXX_COMPILER__day_2022_7_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_7.cpp || cmake_object_order_depends_target_day_2022_7
+  DEP_FILE = CMakeFiles/day_2022_7.dir/src/day_2022_7.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_7.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_7.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_7
+
+
+#############################################
+# Link the executable day_2022_7
+
+build day_2022_7: CXX_EXECUTABLE_LINKER__day_2022_7_Debug CMakeFiles/day_2022_7.dir/src/day_2022_7.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_7.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_7
+  TARGET_PDB = day_2022_7.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_7_2
+
+
+#############################################
+# Order-only phony target for day_2022_7_2
+
+build cmake_object_order_depends_target_day_2022_7_2: phony || CMakeFiles/day_2022_7_2.dir
+
+build CMakeFiles/day_2022_7_2.dir/src/day_2022_7_2.cpp.o: CXX_COMPILER__day_2022_7_2_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_7_2.cpp || cmake_object_order_depends_target_day_2022_7_2
+  DEP_FILE = CMakeFiles/day_2022_7_2.dir/src/day_2022_7_2.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_7_2.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_7_2.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_7_2
+
+
+#############################################
+# Link the executable day_2022_7_2
+
+build day_2022_7_2: CXX_EXECUTABLE_LINKER__day_2022_7_2_Debug CMakeFiles/day_2022_7_2.dir/src/day_2022_7_2.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_7_2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_7_2
+  TARGET_PDB = day_2022_7_2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_8
+
+
+#############################################
+# Order-only phony target for day_2022_8
+
+build cmake_object_order_depends_target_day_2022_8: phony || CMakeFiles/day_2022_8.dir
+
+build CMakeFiles/day_2022_8.dir/src/day_2022_8.cpp.o: CXX_COMPILER__day_2022_8_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_8.cpp || cmake_object_order_depends_target_day_2022_8
+  DEP_FILE = CMakeFiles/day_2022_8.dir/src/day_2022_8.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_8.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_8.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_8
+
+
+#############################################
+# Link the executable day_2022_8
+
+build day_2022_8: CXX_EXECUTABLE_LINKER__day_2022_8_Debug CMakeFiles/day_2022_8.dir/src/day_2022_8.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_8.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_8
+  TARGET_PDB = day_2022_8.dbg
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hugo/my_projects/AOC-CPP/build && /opt/homebrew/Cellar/cmake/3.24.2/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hugo/my_projects/AOC-CPP/build && /opt/homebrew/Cellar/cmake/3.24.2/bin/ccmake -S/Users/hugo/my_projects/AOC-CPP -B/Users/hugo/my_projects/AOC-CPP/build
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/hugo/my_projects/AOC-CPP/build && /opt/homebrew/Cellar/cmake/3.24.2/bin/cmake --regenerate-during-build -S/Users/hugo/my_projects/AOC-CPP -B/Users/hugo/my_projects/AOC-CPP/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/hugo/my_projects/AOC-CPP/build
+
+build all: phony day_2022_1 day_2022_2 day_2022_3 day_2022_4 day_2022_4_2 day_2022_5 day_2022_6 day_2022_7 day_2022_7_2 day_2022_8
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/hugo/my_projects/AOC-CPP/CMakeLists.txt /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_1.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_3.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_5.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_6.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_8.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/hugo/my_projects/AOC-CPP/CMakeLists.txt /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_1.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_3.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_5.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_6.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_8.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.svelte": "svelte",
+        "ostream": "cpp",
+        "__bit_reference": "cpp"
+    }
+}

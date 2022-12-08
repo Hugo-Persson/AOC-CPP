@@ -1,0 +1,141 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "AoC",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_1-Debug-60d807399bcbd84c4165.json",
+					"name" : "day_2022_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_2-Debug-6b88df3ddc1ec401b440.json",
+					"name" : "day_2022_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_3-Debug-ca97a9a33a409088de12.json",
+					"name" : "day_2022_3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_4-Debug-d3de380d2f2bed6b451a.json",
+					"name" : "day_2022_4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_4_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_4_2-Debug-c670117314d3e3af859a.json",
+					"name" : "day_2022_4_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_5-Debug-736dc673745846ed8e5e.json",
+					"name" : "day_2022_5",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_6::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_6-Debug-75b9cc41dd3dfe4e2bfd.json",
+					"name" : "day_2022_6",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_7-Debug-ec0658fe6640f31429ee.json",
+					"name" : "day_2022_7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_7_2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_7_2-Debug-a63b1a778f25ec2e0913.json",
+					"name" : "day_2022_7_2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "day_2022_8::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-day_2022_8-Debug-af9c4b968da7818f434b.json",
+					"name" : "day_2022_8",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/hugo/my_projects/AOC-CPP/build",
+		"source" : "/Users/hugo/my_projects/AOC-CPP"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

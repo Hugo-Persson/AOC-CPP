@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_1.dir/src/day_2022_1.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_1.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_1.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_2.dir/src/day_2022_2.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_2.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_2.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_3.dir/src/day_2022_3.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_3.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_3.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_4.dir/src/day_2022_4.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_4.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_4.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_4_2.dir/src/day_2022_4_2.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_4_2.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_4_2.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_5.dir/src/day_2022_5.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_5.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_5.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_6.dir/src/day_2022_6.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_6.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_6.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_7.dir/src/day_2022_7.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_7.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_7.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_7_2.dir/src/day_2022_7_2.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_7_2.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_7_2.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "/usr/bin/clang++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/day_2022_8.dir/src/day_2022_8.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_8.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_8.cpp"
+}
+]
