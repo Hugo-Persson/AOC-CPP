@@ -2,6 +2,14 @@
     "files.associations": {
         "*.svelte": "svelte",
         "ostream": "cpp",
-        "__bit_reference": "cpp"
+        "__bit_reference": "cpp",
+        "__split_buffer": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "queue": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "vector": "cpp",
+        "iostream": "cpp"
     }
 }
