@@ -19,6 +19,7 @@ struct Element{
   bool isVector = false;
   vector<Element*> elements;
   int value = 0;
+  string line = "";
   
   Element* wrapInVector(){
     Element* newElement = new Element{true, {}, 0};
@@ -35,7 +36,7 @@ Element* getNumberElementFromChunk(string chunk){
 }
 
 Element* parseLine(string line){
-  Element* outerElement = new Element{true, {}, 0};
+  Element* outerElement = new Element{true, {}, 0, line};
   stack<Element*> elements;
   elements.push(outerElement);
   string chunk = "";
@@ -58,7 +59,6 @@ Element* parseLine(string line){
       elements.push(newEl);
     }
     else if(c == ']'){
-      
       if(chunk.length()){
         curr->elements.push_back(getNumberElementFromChunk(chunk));
 
@@ -97,29 +97,19 @@ void printElement(Element* e){
 // positive if left i bigger 
 int compareElement(Element* first, Element* second){
   if(!first->isVector && !second->isVector) {
-    //cout << "Comparing " << first->value << " and  " << second->value << endl;
     return first->value - second->value;
 
   }
   else if(first->isVector && !second->isVector){
-    //cout << "Wrapping second " << endl;
     return compareElement(first, second->wrapInVector());  
   }
   else if(!first->isVector && second->isVector) {
-    // cout << "Wrapping first " << endl;
     return compareElement(first->wrapInVector(), second);
   }
 
   else if(first->isVector && second->isVector){
     // Compare all the elements
     int lastCompare = 0;
-    //cout << "Size " << first->elements.size() << endl;
-    /* if(first->elements.size() == 1){
-      cout << "Printing first "<< endl;
-      printElement(first);
-    } */
-    // cout << "second size " << second->elements.size() << endl;
-    //if(first->elements.size() == 0 && second->elements.size() == 0) return 0;
     for(int i = 0; i<first->elements.size(); ++i){
       //cout << "Start loop " << endl;
       if(i >= second->elements.size()){
@@ -127,48 +117,37 @@ int compareElement(Element* first, Element* second){
         return 1; // The only way to reach this point is if left has been less or equal this far because otherwise we would have returned
       } 
       lastCompare = compareElement(first->elements[i], second->elements[i]);
-      // cout << "Here   " << lastCompare << endl;
       if(lastCompare != 0){
-        /* cout << "Ending here " << lastCompare << endl; 
-        cout << first->elements[i]->value << endl;
-        cout << second->elements[i]->value << endl; */
-         return lastCompare; 
+        return lastCompare; 
       }
-      //cout << "Also here   " << i << endl;
     }
-    // cout << "returning " << endl
     return first->elements.size() - second->elements.size();
   }
 }
 
+bool compareWrapper(Element* first, Element* second){
+  return compareElement(first, second) < 0;
+}
 
 
 int main() {
   ifstream in("day_2022_13");
 
   string first;
-  string second;
-  int index = 1;
-  int indicesInOrder = 0;
-  while(in >> first >> second){
-    //cout << "Starting loop " << endl;
+  vector<Element*> elements;
+  while(in >> first){
     auto f = parseLine(first);
-    auto s = parseLine(second);
-    
-    /* cout << "Printing first " <<endl;
-    printElement(f);
-
-    cout << "Printing second " << endl;
-    printElement(s); */
-    int compared = compareElement(f,s);
-    //printElement(f);
-    //cout << "Result for " << index << " is " << compared << endl; 
-    if(compared < 0) {
-      cout << "True for    " << index << endl;
-      indicesInOrder+=index;
-    }
-    index++;
+    elements.push_back(f);
   }
-  cout << "Result " << indicesInOrder << endl;
+
+  sort(elements.begin(), elements.end(), compareWrapper);
+  int result = 1;
+  int index = 1;
+  for(auto e : elements){
+    if(e->line == "[[2]]" || e->line == "[[6]]") result*=index;
+    ++index;
+  }
+  cout << result << endl;
+
   return 1;
 }
