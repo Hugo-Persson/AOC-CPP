@@ -131,6 +131,68 @@ build day_2022_11: CXX_EXECUTABLE_LINKER__day_2022_11_Debug CMakeFiles/day_2022_
   TARGET_PDB = day_2022_11.dbg
 
 # =============================================================================
+# Object build statements for EXECUTABLE target day_2022_12
+
+
+#############################################
+# Order-only phony target for day_2022_12
+
+build cmake_object_order_depends_target_day_2022_12: phony || CMakeFiles/day_2022_12.dir
+
+build CMakeFiles/day_2022_12.dir/src/day_2022_12.cpp.o: CXX_COMPILER__day_2022_12_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_12.cpp || cmake_object_order_depends_target_day_2022_12
+  DEP_FILE = CMakeFiles/day_2022_12.dir/src/day_2022_12.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20
+  OBJECT_DIR = CMakeFiles/day_2022_12.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_12.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_12
+
+
+#############################################
+# Link the executable day_2022_12
+
+build day_2022_12: CXX_EXECUTABLE_LINKER__day_2022_12_Debug CMakeFiles/day_2022_12.dir/src/day_2022_12.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_12.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_12
+  TARGET_PDB = day_2022_12.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target day_2022_13
+
+
+#############################################
+# Order-only phony target for day_2022_13
+
+build cmake_object_order_depends_target_day_2022_13: phony || CMakeFiles/day_2022_13.dir
+
+build CMakeFiles/day_2022_13.dir/src/day_2022_13.cpp.o: CXX_COMPILER__day_2022_13_Debug /Users/hugo/my_projects/AOC-CPP/src/day_2022_13.cpp || cmake_object_order_depends_target_day_2022_13
+  DEP_FILE = CMakeFiles/day_2022_13.dir/src/day_2022_13.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20
+  OBJECT_DIR = CMakeFiles/day_2022_13.dir
+  OBJECT_FILE_DIR = CMakeFiles/day_2022_13.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target day_2022_13
+
+
+#############################################
+# Link the executable day_2022_13
+
+build day_2022_13: CXX_EXECUTABLE_LINKER__day_2022_13_Debug CMakeFiles/day_2022_13.dir/src/day_2022_13.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/day_2022_13.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = day_2022_13
+  TARGET_PDB = day_2022_13.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target day_2022_2
 
 
@@ -487,7 +549,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/hugo/my_projects/AOC-CPP/build
 
-build all: phony day_2022_1 day_2022_10 day_2022_11 day_2022_2 day_2022_3 day_2022_4 day_2022_4_2 day_2022_5 day_2022_6 day_2022_7 day_2022_7_2 day_2022_8 day_2022_9
+build all: phony day_2022_1 day_2022_10 day_2022_11 day_2022_12 day_2022_13 day_2022_2 day_2022_3 day_2022_4 day_2022_4_2 day_2022_5 day_2022_6 day_2022_7 day_2022_7_2 day_2022_8 day_2022_9
 
 # =============================================================================
 # Built-in targets
@@ -496,14 +558,14 @@ build all: phony day_2022_1 day_2022_10 day_2022_11 day_2022_2 day_2022_3 day_20
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Users/hugo/my_projects/AOC-CPP/CMakeLists.txt /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_1.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_10.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_11.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_3.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_5.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_6.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_8.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_9.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Users/hugo/my_projects/AOC-CPP/CMakeLists.txt /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_1.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_10.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_11.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_12.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_13.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_3.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_5.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_6.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_8.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_9.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/hugo/my_projects/AOC-CPP/CMakeLists.txt /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_1.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_10.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_11.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_3.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_5.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_6.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_8.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_9.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build /Users/hugo/my_projects/AOC-CPP/CMakeLists.txt /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_1.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_10.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_11.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_12.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_13.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_3.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_4_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_5.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_6.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_7_2.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_8.cmake /Users/hugo/my_projects/AOC-CPP/cmake/day_2022_9.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCXXInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeGenericSystem.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeInitializeConfigs.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeLanguageInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Compiler/GNU.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-C.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Apple-Clang.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/Darwin.cmake /opt/homebrew/Cellar/cmake/3.24.2/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################
