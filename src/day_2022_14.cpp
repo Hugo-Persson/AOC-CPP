@@ -57,14 +57,20 @@ int maxX = 0;
 int maxY = 0;
 bool simulateSandFall(int y, int x){
   
-  if(y >= maxY) return false;
+  if(y == maxY+1){
+    // Place block because infinite floor
+    rockMap[y][x]=true;
+    return true;
+    
+  }
   if(!rockMap[y+1][x]) return simulateSandFall(y+1,x);
   if(!rockMap[y+1][x-1]) return simulateSandFall(y+1,x-1);
   if(!rockMap[y+1][x+1]) return simulateSandFall(y+1, x+1);
   
   cout << "Placing sand " << x << ", " << y << endl;
   rockMap[y][x] = true;
-  return true;
+  
+  return !(x==500 && y==0);
 }
 
 
@@ -96,7 +102,7 @@ int main() {
   }  
   
   executeInstructions();
-  int falls = 0;
+  int falls = 1;
   cout<< rockMap.size() << endl;
   while(simulateSandFall(0, 500)){
     falls++;
