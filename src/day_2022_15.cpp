@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <map>
+#include <optional>
 #include <set>
 #include <string>
 #include <vector>
@@ -10,30 +11,45 @@
 
 using namespace std;
 
-set<int> occupiedPos;
+struct Sensor{
+  pair<int, int> pos;
+  int range;
+};
 
-  int checkY = 2000000;
+vector<Sensor> sensors;
+int maxCoordValue = 4000000;
+bool isCovered(pair<int, int> p){
+  if(p.first < 0 || p.first > maxCoordValue|| p.second < 0 || p.second > maxCoordValue) return true;
 
-void markPosition(pair<int,int> position, pair<int, int> beaconPos){
-  if(position.second != checkY) return;
-  occupiedPos.insert(position.first);
+  for(auto s : sensors){
+    auto dX =  s.pos.first - p.first;
+    auto dY = s.pos.second - p.second;
+    auto distanceTo = abs(dX) + abs(dY);
+    if(distanceTo <= s.range) return true;
+    
+  }  
+  return false;
 }
 
-void markImpossiblePositions(pair<int,int> sensorPosition, pair<int,int> beaconPosition){
-  int distance = (abs(sensorPosition.first-beaconPosition.first) + abs(sensorPosition.second - beaconPosition.second)); // X diff + y Diff 
-  for(int i = 0; i<=distance; ++i){
-    if(sensorPosition.second + i != checkY && sensorPosition.second -i != checkY) continue;
 
-    for(int dX = 0; dX<=distance-i; ++dX){
-      markPosition({sensorPosition.first+dX, sensorPosition.second+i}, beaconPosition);
-      markPosition({sensorPosition.first-dX, sensorPosition.second+i}, beaconPosition);
-      markPosition({sensorPosition.first+dX, sensorPosition.second-i}, beaconPosition);
-      markPosition({sensorPosition.first-dX, sensorPosition.second-i}, beaconPosition);
-    }
+optional<pair<int,int>> checkEdge(Sensor sensor){
+  int d = sensor.range+1;
+  for(int dX = -d; dX<d; ++dX){
+    int offset = d - abs(dX);
+    int xToCheck = sensor.pos.first + dX;
+    pair<int, int> firstPos = {xToCheck, sensor.pos.second + offset};
+    if(!isCovered(firstPos)) return firstPos;
+    pair<int, int> secondPos = {xToCheck, sensor.pos.second - offset};
+    if(!isCovered(secondPos)) return secondPos;
   }
+  return {};
 }
 
+Sensor createSensor(pair<int, int> sensorPosition, pair<int,int> beaconPosition){
+  int distance = (abs(sensorPosition.first-beaconPosition.first) + abs(sensorPosition.second - beaconPosition.second)); // X diff + y Diff 
 
+  return {sensorPosition, distance};
+}
 
 
 int chunkToInt(string s){
@@ -52,12 +68,22 @@ int main() {
     auto chunks = split(line, ' ');
     pair<int,int> sensorPosition = {chunkToInt(chunks[2]), chunkToInt(chunks[3])};
     pair<int,int> beaconPosition = {chunkToInt(chunks[8]), chunkToInt(chunks[9])};
-    if(beaconPosition.second == checkY) beaconX.insert(beaconPosition.first);
-    
-    markImpossiblePositions(sensorPosition, beaconPosition);  
-    
+    auto s = createSensor(sensorPosition, beaconPosition);
+    sensors.push_back(s);
+      
   }  
-  cout <<occupiedPos.size() - beaconX.size() << endl;
-
+  
+  for(auto s : sensors){
+    auto res = checkEdge(s);
+    if(res.has_value()){
+      long long x = res.value().first;
+      long long y = res.value().second;
+      cout << x << ", " << y << endl;
+      cout << x * 4000000 + y<< endl;
+      return 1;
+    }
+    cout << "Checked one sensor" << endl;
+  }
+  
   return 1;
 }
