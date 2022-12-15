@@ -74,16 +74,15 @@ int main() {
   }  
   
   for(auto s : sensors){
-    auto res = checkEdge(s);
-    if(res.has_value()){
-      long long x = res.value().first;
-      long long y = res.value().second;
-      cout << x << ", " << y << endl;
-      cout << x * 4000000 + y<< endl;
-      return 1;
-    }
-    cout << "Checked one sensor" << endl;
-  }
-  
+      auto res = checkEdge(s);
+      if(res){
+        const long long x = res->first;
+        const long long y = res->second;
+        cout << x << ", " << y << endl;
+        cout << x * 4000000 + y<< endl;
+        return 1;
+      }
+      cout << "Checked one sensor" << endl;
+  }  
   return 1;
 }
