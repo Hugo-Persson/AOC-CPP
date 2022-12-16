@@ -1,8 +1,12 @@
+/Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_1.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_10.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_11.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_12.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_13.dir
+/Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_14.dir
+/Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_15.dir
+/Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_16.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_2.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_3.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_4.dir

@@ -1,6 +1,11 @@
 [
 {
   "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "g++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20 -o CMakeFiles/day_.dir/src/day_.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
   "command": "g++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20 -o CMakeFiles/day_2022_1.dir/src/day_2022_1.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_1.cpp",
   "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_1.cpp"
 },
@@ -23,6 +28,21 @@
   "directory": "/Users/hugo/my_projects/AOC-CPP/build",
   "command": "g++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20 -o CMakeFiles/day_2022_13.dir/src/day_2022_13.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_13.cpp",
   "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_13.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "g++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20 -o CMakeFiles/day_2022_14.dir/src/day_2022_14.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_14.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_14.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "g++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20 -o CMakeFiles/day_2022_15.dir/src/day_2022_15.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_15.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_15.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "g++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20 -o CMakeFiles/day_2022_16.dir/src/day_2022_16.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_16.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_16.cpp"
 },
 {
   "directory": "/Users/hugo/my_projects/AOC-CPP/build",
