@@ -11,6 +11,10 @@
         "string_view": "cpp",
         "vector": "cpp",
         "iostream": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "regex": "cpp",
+        "memory": "cpp",
+        "utility": "cpp",
+        "set": "cpp"
     }
 }

@@ -29,7 +29,7 @@ struct Valve{
   }
 };
 
-array<unordered_map<string, int>, 31> table;
+array<unordered_map<string, pair<int, set<string>>>, 31> table;
 unordered_map<string, Valve> valves;
 int rateToInt(string chunk){
   return stoi(chunk.substr(5, chunk.length()-1));
@@ -86,22 +86,33 @@ int main() {
     auto j = jumps.front(); jumps.pop();
     
     if(j.time < 0) continue;
-    
-    if(table[j.time][j.to] <= j.win){
+
+    auto t = table[j.time][j.to];
+    bool shouldContinue = false;
+    if(t.first <= j.win){
       //if(j.time < 10) out << "Improved jump for " << j.to << " new win is " << j.win << " ttl "  << j.time <<  endl;
-      table[j.time][j.to] = j.win; 
-      
-      
+      table[j.time][j.to] = {j.win, j.opened}; 
+      shouldContinue=true;
+    } 
+    else if(!includes(j.opened.begin(), j.opened.end(), t.second.begin(), t.second.end())){
+      shouldContinue = true;
+
+    }
+
+    if(shouldContinue){
       if(j.time == 0) continue;
       insertAllJumps(j);  
-    } 
+    }
+
+
+    
     
     
   }
   
   int max = 0;
   for(auto [node, win] : table[0]){
-    if(win > max) max = win;
+    if(win.first > max) max = win.first;
   }
   
   cout << max << endl;
