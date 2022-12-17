@@ -11,6 +11,8 @@
 #include "Split.hpp"
 #include "FloydDude.hpp"
 #include "SetCompare.hpp"
+#include <algorithm>
+
 
 using namespace std;
 
@@ -39,35 +41,6 @@ int rateToInt(string chunk){
   return stoi(chunk.substr(5, chunk.length()-1));
 }
 
-struct Jump{
-  string to;
-  int time;
-  int win;
-  
-  set<string> opened; 
-};
-
-queue<Jump> jumps;
-void insertAllJumps(Jump& pos){
-  auto& node = valves[pos.to];
-  if(node.flow != 0 && pos.opened.count(pos.to) == 0){
-    for(auto& j : node.jumps){
-
-      Jump newJump = {j, pos.time-2, pos.win + node.flow * (pos.time-1), pos.opened};
-      newJump.opened.insert(pos.to);
-
-      jumps.push(newJump);
-    }
-
-
-  }  
-  
-  for(auto j : node.jumps){
-
-    jumps.push({j, pos.time-1, pos.win, pos.opened});
-  }
-  
-}
 unordered_map<string, unordered_map<string, int>> adj;
 
 void calc(string currentNode, int budget, set<string> opened, int val, std::map<std::set<string>, int, bool(*)(const std::set<string>&, const std::set<string>&)>& memo){
@@ -123,10 +96,15 @@ int main() {
   floyd(adj);
 
   std::map<std::set<string>, int, bool(*)(const std::set<string>&, const std::set<string>&)> memo(SetCompare);
-  calc("AA", 30, {}, 0, memo);
+  calc("AA", 26, {}, 0, memo);
   int maxV = 0;
-  for(auto [name, val] : memo){
-    maxV = max(maxV, val);
+  for(auto [opened, val] : memo){
+    for(auto [opened2, val2] : memo){
+      set<string> overlap;
+      set_intersection(opened.begin(), opened.end(), opened2.begin(), opened2.end(), inserter(overlap, overlap.begin()));
+      if(overlap.size() > 1) continue;
+      maxV = max(maxV, val+val2);
+    }
   }  
   cout << maxV;
 
