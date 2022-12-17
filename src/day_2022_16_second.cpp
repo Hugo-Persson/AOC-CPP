@@ -39,6 +39,35 @@ int rateToInt(string chunk){
   return stoi(chunk.substr(5, chunk.length()-1));
 }
 
+struct Jump{
+  string to;
+  int time;
+  int win;
+  
+  set<string> opened; 
+};
+
+queue<Jump> jumps;
+void insertAllJumps(Jump& pos){
+  auto& node = valves[pos.to];
+  if(node.flow != 0 && pos.opened.count(pos.to) == 0){
+    for(auto& j : node.jumps){
+
+      Jump newJump = {j, pos.time-2, pos.win + node.flow * (pos.time-1), pos.opened};
+      newJump.opened.insert(pos.to);
+
+      jumps.push(newJump);
+    }
+
+
+  }  
+  
+  for(auto j : node.jumps){
+
+    jumps.push({j, pos.time-1, pos.win, pos.opened});
+  }
+  
+}
 unordered_map<string, unordered_map<string, int>> adj;
 
 void calc(string currentNode, int budget, set<string> opened, int val, std::map<std::set<string>, int, bool(*)(const std::set<string>&, const std::set<string>&)>& memo){
@@ -72,7 +101,7 @@ unordered_map<string, unordered_map<string, int>> createAdj(){
 }
 
 int main() {
-  ifstream in("day_2022_16");
+  ifstream in("day_2022_16_second");
 
   out << "Program started " << endl;
   string line;

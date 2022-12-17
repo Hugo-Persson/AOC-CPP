@@ -7,6 +7,7 @@
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_14.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_15.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_16.dir
+/Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_16_second.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_2.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_3.dir
 /Users/hugo/my_projects/AOC-CPP/build/CMakeFiles/day_2022_4.dir

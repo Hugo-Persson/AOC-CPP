@@ -6,7 +6,7 @@
 #include <set>
 #include <string>
 #include <vector>
-#include "Split.cpp"
+#include "Split.hpp"
 #include <math.h>
 
 using namespace std;

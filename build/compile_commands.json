@@ -46,6 +46,11 @@
 },
 {
   "directory": "/Users/hugo/my_projects/AOC-CPP/build",
+  "command": "g++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20 -o CMakeFiles/day_2022_16_second.dir/src/day_2022_16_second.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_16_second.cpp",
+  "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_16_second.cpp"
+},
+{
+  "directory": "/Users/hugo/my_projects/AOC-CPP/build",
   "command": "g++ -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++20 -o CMakeFiles/day_2022_2.dir/src/day_2022_2.cpp.o -c /Users/hugo/my_projects/AOC-CPP/src/day_2022_2.cpp",
   "file": "/Users/hugo/my_projects/AOC-CPP/src/day_2022_2.cpp"
 },
