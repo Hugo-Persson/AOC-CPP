@@ -13,7 +13,7 @@ EOT
 
 
 # Add source file to src dir
-cat <<EOT > src/day_$1.cpp
+cat <<EOT >> src/day_$1.cpp
 #include <array>
 #include <fstream>
 #include <iostream>

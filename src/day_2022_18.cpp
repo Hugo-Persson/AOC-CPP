@@ -16,12 +16,12 @@ set<tuple<int,int,int>> m;
 int countSides(tuple<int,int,int>& pos){
   int sum = 0;
   auto& [x,y,z] = pos;
-  if(!m.count({x-1, y,z})) sum++;
-  if(!m.count({x+1, y,z})) sum++;
-  if(!m.count({x, y+1,z})) sum++;
-  if(!m.count({x, y-1,z})) sum++;
-  if(!m.count({x, y,z+1})) sum++;
-  if(!m.count({x, y,z-1})) sum++;
+  if(m.count({x-1, y,z})) sum++;
+  if(m.count({x+1, y,z})) sum++;
+  if(m.count({x, y+1,z})) sum++;
+  if(m.count({x, y-1,z})) sum++;
+  if(m.count({x, y,z+1})) sum++;
+  if(m.count({x, y,z-1})) sum++;
   return sum;
 }
 
@@ -36,7 +36,8 @@ int maxY = 0;
 int maxZ = 0;
 
 bool posInside(tuple<int,int,int> pos){
- return true; 
+  auto [x,y,z] = pos;
+  return x >= -1 && x<=maxX+1 && y>=-1 && y<= maxY+1 && z >= -1 && z <= maxZ +1;
 }
 
 
@@ -50,7 +51,7 @@ int main() {
     maxZ = max(maxZ, z);
     m.insert({x,y,z});
   }
-  cout << "size " << m.size() << endl;
+
   int answer = 0;
 
   queue<tuple<int,int,int>> visistList;
@@ -59,11 +60,13 @@ int main() {
     auto curr = visistList.front(); visistList.pop();
     if(!posInside(curr)) continue;
     if(visited.count(curr)) continue;
+    if(m.count(curr)) continue;
     visited.insert(curr);
 
-    answer+= countSides(curr);
-
     auto [x,y,z] = curr;
+    auto sC = countSides(curr);
+    answer += sC;
+
     
     visistList.push({x+1, y,z});
     visistList.push({x-1, y,z});

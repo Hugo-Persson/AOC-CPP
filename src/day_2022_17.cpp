@@ -9,47 +9,63 @@
 using namespace std;
 
 
-vector<vector<bool>> room(4, vector<bool>(7, false));
-int lastPos = 4; 
+set<pair<int,int>> room;
+int maxY = 0;
 struct FallingChunk{
   vector<pair<int,int>> body;
 
   bool moveDown(){
     bool okMove = true;
-    for(auto& p : body){
-      if(p.second >= -1){
+    for(auto p : body){
+      if(p.second > 1){
         // Check if ok move
-        if(!(p.second+1 < room.size() && !room[p.second+1][p.first])) {
+        if(room.count({p.first, p.second-1})) {
           okMove = false;
           break;
         }
+      }
+      else{
+        okMove = false;
+        break;
       }
     }
     if(okMove){
       // DO the move
       for(auto& p : body){
-        p.second+=1;
+        p.second-=1;
       }
+      return true;
 
     }
     else{
 
       // Place stuff
-      int topBlock = room.size();
-      for(auto p : body){
-        room[p.second][p.first] = true;
-        topBlock = min(topBlock, p.second);
+      for(auto& b : body){
+        //cout << "Placing " << b.first << "," << b.second << endl;
+        maxY = max(b.second, maxY);
+        room.insert(b);
       }
-      for(int i = 0; i<topBlock-room.size(); ++i){
-
-      }
+      
 
       return false;
     }
   }
 
   void push(char dir){
-
+    int dX;
+    if (dir == '<') dX = -1;
+    else dX = 1;
+    int reverse = false;
+    for(auto& b : body){
+      b.first+=dX;
+      if(b.first<0 || b.first >= 7) reverse = true; 
+    }
+    if(reverse){
+      
+      for(auto& b : body){
+         b.first -= dX; 
+      }
+    }
   }
 };
 
@@ -57,6 +73,9 @@ struct FallingChunk{
 
 
 FallingChunk createChunkFromStart(vector<pair<int,int>> start){
+  for(auto& b: start){
+    b.second=maxY+3+b.second;
+  }
   return {start};
 }
 
@@ -65,10 +84,10 @@ int main() {
 
   vector<vector<pair<int,int>>> shapes;
   shapes.push_back({{2,0}, {3,0}, {4,0}, {5,0}}); // -
-  shapes.push_back({{2,-1}, {3,-1}, {3,-2}, {3,0}, {4,-1}});
-  shapes.push_back({{2,0}, {3,0}, {4,0}, {4,-1}, {4,-2}});
-  shapes.push_back({{2,0}, {2,-1}, {2,-2}, {2,-3}});
-  shapes.push_back({{2,0}, {2,-1}, {3,0}, {3,-1}});
+  shapes.push_back({{2,1}, {3,1}, {3,2}, {3,0}, {4,1}});
+  shapes.push_back({{2,0}, {3,0}, {4,0}, {4,1}, {4,2}});
+  shapes.push_back({{2,0}, {2,1}, {2,2}, {2,3}});
+  shapes.push_back({{2,0}, {2,1}, {3,0}, {3,1}});
 
 
   string wind;
@@ -78,8 +97,10 @@ int main() {
   int stoppedRocks = 0;
   int windIndex = 0;
   while(stoppedRocks < 2022){
+    if(windIndex >= wind.length()) windIndex = 0;
     currentChunk.push(wind[windIndex++]);
     if(!currentChunk.moveDown()){
+      if(currShapeIndex >= shapes.size()) currShapeIndex = 0;
       stoppedRocks++;
       currentChunk = createChunkFromStart(shapes[currShapeIndex++]);
 
@@ -87,7 +108,7 @@ int main() {
   }
 
 
-  cout << "answer" << endl;
+  cout << maxY << endl;
 
   return 1;
 }
